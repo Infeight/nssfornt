@@ -21,22 +21,20 @@ function opencontacts(){
     window.location.href="/contacts.html"
 }
 document.getElementById("options").addEventListener("click", showheader)
-function showheader() {
-    if (document.getElementById("options").value == "close") {
-        document.getElementById("header").style.display = "initial"
-        document.getElementById("header").style.transition = "all 0s ease-out"
-        document.getElementById("options").style.transform = 'rotate(1turn)'
-        document.getElementById("options").value = "open"
-        document.getElementById("options").style.backgroundColor = "transparent"
-    }
+function showheader(){
+    if(document.getElementById("options").value=="close"){
+    document.getElementById("header").style.display="initial"
+    document.getElementById("options").style.transform = 'rotate(1turn)'
+    document.getElementById("options").value="open"
+    document.getElementById("options").style.backgroundColor=" transparent"
+}
 
-    else {
-        document.getElementById("header").style.display = "none"
+   else {
+        document.getElementById("header").style.display="none"
         document.getElementById("options").style.transform = 'rotate(-1turn)'
-        document.getElementById("options").value = "close"
-        document.getElementById("options").style.backgroundColor = "transparent"
-    }
-
+        document.getElementById("options").value="close"
+        document.getElementById("options").style.backgroundColor="transparent"}
+    
 }
 document.getElementById("selbtn16").addEventListener("click", openfaq)
 function openfaq() {

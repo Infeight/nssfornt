@@ -84,7 +84,7 @@
             width: 100vw;
             height: 50vw;
             position: relative;
-            top: -10vw;
+            top: -10.5vw;
             background-color: transparent;
         }
         .contacts-layer{
@@ -139,13 +139,14 @@
             top: 0vw;
             display: initial;
             z-index: 5;
-            width: 7.5vw;
-            height: 7.5vw;
+            width: 8.5vw;
+            height: 8.5vw;
             transition-duration: 1.2s;
             transition-property: all;
+            margin: 1vw;
         }
         #options i{
-            font-size: 7.5vw;
+            font-size: 8.5vw;
         }
        
     .head {

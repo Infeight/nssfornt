@@ -88,15 +88,16 @@
     #options {
         background-color: transparent;
         top: 0vw;
-        width: 7.5vw;
-        height: 7.5vw;
+        width: 8.5vw;
+        height: 8.5vw;
         display: initial;
         z-index: 5;
         transition-duration: 1.2s;
         transition-property: all;
+        margin: 1vw;
     }
   #options i{
-    font-size: 7.5vw;
+    font-size: 8.5vw;
   }
  
     
