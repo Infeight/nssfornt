@@ -316,12 +316,12 @@
 }
     #close1 {
         position: absolute;
-        width: 4.5vw;
-        height: 4.5vw;
+        width: 5.5vw;
+        height: 5.5vw;
         left: 82vw;
         top: 2vw;
         background-color: red;
-        font-size: 4vw;
+        font-size: 5vw;
     }
     #eventscroll1 {
         display: flex;
