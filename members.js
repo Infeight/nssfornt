@@ -24,14 +24,14 @@ document.getElementById("options").addEventListener("click",showheader)
 function showheader(){
     if(document.getElementById("options").value=="close"){
     document.getElementById("header").style.display="initial"
-    document.getElementById("options").innerHTML='<i class="fa fa-bars" aria-hidden="true"></i>'
+    document.getElementById("options").style.transform = 'rotate(1turn)'
     document.getElementById("options").value="open"
     document.getElementById("options").style.backgroundColor=" transparent"
 }
 
    else {
         document.getElementById("header").style.display="none"
-        document.getElementById("options").innerHTML='<i class="fa fa-server" aria-hidden="true"></i>'
+        document.getElementById("options").style.transform = 'rotate(-1turn)'
         document.getElementById("options").value="close"
         document.getElementById("options").style.backgroundColor="transparent"}
     

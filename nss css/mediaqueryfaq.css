@@ -88,6 +88,8 @@
     #options {
         background-color: transparent;
         top: 0vw;
+        width: 7.5vw;
+        height: 7.5vw;
         display: initial;
         z-index: 5;
         transition-duration: 1.2s;
@@ -262,7 +264,7 @@
     color: white;
     position: relative;
     top: 0vw;
-    left: 2vw;
+    left: 0vw;
     height: 14vw;
 }
 

@@ -139,8 +139,8 @@
             top: 0vw;
             display: initial;
             z-index: 5;
-            width: 9.5vw;
-            height: 9.5vw;
+            width: 7.5vw;
+            height: 7.5vw;
             transition-duration: 1.2s;
             transition-property: all;
         }
@@ -360,7 +360,7 @@
     color: white;
     position: relative;
     top: 0vw;
-    left: 2vw;
+    left: 0vw;
     height: 14vw;
 }
 
