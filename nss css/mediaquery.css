@@ -267,7 +267,7 @@
         height: 7vw;
         border-radius: 6px;
         z-index: 2;
-        font-size: 2.6vw;
+        font-size: 3.5vw;
         font-weight: 400;
     }
     .up-event-des {
@@ -314,6 +314,10 @@
     opacity: 99%;
 
 }
+.event-des p{
+    margin:0 ;
+    font-size: 4vw;
+}
     #close1 {
         position: absolute;
         width: 5.5vw;
@@ -352,7 +356,7 @@
         transition-property: all;
         }
         to{
-            width: 45vw;
+            width: 65vw;
             transition: width 2s;
         transition-property: all;
         }
@@ -364,7 +368,7 @@
         transition-property: all;
         }
         to{
-            width: 40vw;
+            width: 65vw;
             transition: width 2s;
         transition-property: all;
         }
