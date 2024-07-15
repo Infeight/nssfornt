@@ -106,7 +106,7 @@ document.getElementById("share").addEventListener("click", async()=>{
         Exp:document.getElementById("exp-matter").value
     }
 
- await fetch ("https://nss2server.vercel.app/experience",{method:"post", headers: { "Content-Type": "application/json" }, body: JSON.stringify(exp)})
+ await fetch ("https://nss-server-zeta.vercel.app/experience",{method:"post", headers: { "Content-Type": "application/json" }, body: JSON.stringify(exp)})
  .then().then( window.location.reload())
  
 
