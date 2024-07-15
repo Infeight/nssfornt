@@ -79,7 +79,7 @@ body::-webkit-scrollbar{
 
 }
 
-#options {
+.options {
     display: none;
     width: 5.5vw;
     height: 5.5vw;
@@ -94,9 +94,9 @@ body::-webkit-scrollbar{
     transition-property: all;
 
 }
-
-#options i {
-    font-size: 5vw;
+#options1 {
+    /* transition-duration: 1.2s; */
+    transform: rotateY(90deg);
 }
 #hr1{
     display: none;

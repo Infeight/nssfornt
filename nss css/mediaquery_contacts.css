@@ -92,12 +92,14 @@
         }
         .clgpic img{
             height: 50vw;
+            position: relative;
+            top: 8vw;
         }
         .clgheading{
             font-size: 3vw;
             position: absolute;
             text-align: center;
-            top: 12vw;
+            top: 20vw;
             left: 0vw;
             width: 90%;
             display: flex;
@@ -133,20 +135,23 @@
             /* font-style: italic; */
             color: #fff;
         }
-        #options {
-            position: sticky;
+        .options {
             background-color: transparent;
             top: 0vw;
+            width: 11.5vw;
+            height: 11.5vw;
+            font-size: 8.5vw;
             display: initial;
             z-index: 5;
-            width: 8.5vw;
-            height: 8.5vw;
-            transition-duration: 1.2s;
+            transition-duration: 0.5s;
             transition-property: all;
             margin: 1vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        #options i{
-            font-size: 8.5vw;
+        #options1{
+            font-size: 6.5vw;
         }
        
     .head {
