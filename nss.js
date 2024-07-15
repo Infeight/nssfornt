@@ -21,8 +21,9 @@ const upeve = async()=>{
     })
 
     const base64arr1 = [];
-
+    const namearr = [];
     allsneakpeaks.forEach(Element=>{
+        
         const arr =   new Uint8Array(Element.image.data.data);
         console.log(arr)
     const base64String = 
@@ -31,6 +32,7 @@ const upeve = async()=>{
             arr.reduce((data, byte) => data + String.fromCharCode(byte), '')
          );
     base64arr1.push(base64String)
+  namearr.push(Element.name)
     })
 
 
@@ -62,6 +64,12 @@ const upeve = async()=>{
      document.getElementById("pic5").src = `data:image/png;base64,${base64arr1[4]?base64arr1[4]:""}`
      document.getElementById("pic6").src = `data:image/png;base64,${base64arr1[5]?base64arr1[5]:""}`
 
+     document.getElementById("pic1").alt = namearr[0]
+     document.getElementById("pic2").alt = namearr[1]
+     document.getElementById("pic3").alt = namearr[2]
+     document.getElementById("pic4").alt = namearr[3]
+     document.getElementById("pic5").alt = namearr[4]
+     document.getElementById("pic6").alt = namearr[5]
 
 
      allexp.forEach(Element=>{

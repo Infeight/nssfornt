@@ -246,7 +246,7 @@ cursor: pointer;
 
 
 .pic_container {
-       /* display: flex; */
+       display: flex;
        width: 59.5%;
        height: 28vw;
        position: relative;
