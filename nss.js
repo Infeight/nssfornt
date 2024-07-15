@@ -123,19 +123,23 @@ document.getElementById("selbtn15").addEventListener("click", opencontacts)
 function opencontacts() {
     window.location.href = "/contacts.html"
 }
-document.getElementById("options").addEventListener("click", showheader)
+document.querySelectorAll(".options").forEach(e=>{e.addEventListener("click", showheader)})
 function showheader() {
     if (document.getElementById("options").value == "close") {
         document.getElementById("header").style.display = "initial"
         document.getElementById("header").style.transition = "all 0s ease-out"
-        document.getElementById("options").style.transform = 'rotate(1turn)'
+
+        document.getElementById("options").style.transform = 'rotatey(270deg)'
+        document.getElementById("options1").style.transform ='rotatey(0deg)'
         document.getElementById("options").value = "open"
         document.getElementById("options").style.backgroundColor = "transparent"
     }
 
     else {
         document.getElementById("header").style.display = "none"
-        document.getElementById("options").style.transform = 'rotate(-1turn)'
+         document.getElementById("options1").style.transform = 'rotatey(90deg)'
+        document.getElementById("options").style.transform ='rotatey(0deg)'
+       
         document.getElementById("options").value = "close"
         document.getElementById("options").style.backgroundColor = "transparent"
     }
