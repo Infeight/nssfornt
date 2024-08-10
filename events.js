@@ -2,7 +2,7 @@
 
 
 const events = async()=>{
-  const data = await fetch('https://nss-server-zeta.vercel.app/events');
+  const data = await fetch('https://nss-server-zeta.vercel.app/events',{headers:{'Access-Control-Allow-Origin': 'https://nssiiitdmkurnool.netlify.app/events'}});
   const pdfdata = await fetch('https://nss-server-zeta.vercel.app/eventpdf');
   const allevents = await data.json()
   const allpdfs = await pdfdata.json()
