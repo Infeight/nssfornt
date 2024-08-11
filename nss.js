@@ -1,7 +1,7 @@
 
 const upeve = async()=>{
-    const data = await fetch('https://nss-server-zeta.vercel.app/upevents');
-    const exp = await fetch('https://nss-server-zeta.vercel.app/experience')
+    const data = await fetch('https://nss-server-zeta.vercel.app/upevents',{method:'GET',headers:{'Content-Type':'application/json'},credentials:'include'});
+    const exp = await fetch('https://nss-server-zeta.vercel.app/experience',{method:'GET',headers:{'Content-Type':'application/json'},credentials:'include'})
     const sneakpeaks =  await fetch('https://nss-server-zeta.vercel.app/sneakpeaks')
     const allupevents =await data.json();
     const allexp = await exp.json();
