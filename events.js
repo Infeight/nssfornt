@@ -2,8 +2,8 @@
 
 
 const events = async()=>{
-  const data = await fetch('https://nss-server-zeta.vercel.app/events',{method:'GET',headers:{'Content-Type':'application/json'},credentials:'include'});
-  const pdfdata = await fetch('https://nss-server-zeta.vercel.app/eventpdf');
+  const data = await fetch('https://nssproject.onrender.com/events',{method:'GET',headers:{'Content-Type':'application/json'},credentials:'include'});
+  const pdfdata = await fetch('https://nssproject.onrender.com/eventpdf');
   const allevents = await data.json()
   const allpdfs = await pdfdata.json()
   console.log(allevents,allpdfs);
