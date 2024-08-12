@@ -1,7 +1,7 @@
 
 const upeve = async()=>{
-    const data = await fetch('https://nss-server-zeta.vercel.app/upevents',{method:'GET',headers:{'Content-Type':'application/json'},credentials:'include'});
-    const exp = await fetch('https://nss-server-zeta.vercel.app/experience',{method:'GET',headers:{'Content-Type':'application/json'},credentials:'include'})
+    const data = await fetch('https://nssproject.onrender.com/upevents',{method:'GET',headers:{'Content-Type':'application/json'},credentials:'include'});
+    const exp = await fetch('https://nssproject.onrender.com/experience',{method:'GET',headers:{'Content-Type':'application/json'},credentials:'include'})
     const sneakpeaks =  await fetch('https://nss-server-zeta.vercel.app/sneakpeaks')
     const allupevents =await data.json();
     const allexp = await exp.json();
@@ -114,7 +114,7 @@ document.getElementById("share").addEventListener("click", async()=>{
         Exp:document.getElementById("exp-matter").value
     }
 
- await fetch ("https://nss-server-zeta.vercel.app/experience",{method:"post", headers: { "Content-Type": "application/json" }, body: JSON.stringify(exp)})
+ await fetch ("https://nssproject.onrender.com/experience",{method:"post", headers: { "Content-Type": "application/json" }, body: JSON.stringify(exp)})
  .then().then( window.location.reload())
  
 
