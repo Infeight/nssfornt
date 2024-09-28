@@ -2,7 +2,7 @@
 const upeve = async()=>{
     const data = await fetch('https://nssproject.onrender.com/upevents',{method:'GET',headers:{'Content-Type':'application/json'},credentials:'include'});
     const exp = await fetch('https://nssproject.onrender.com/experience',{method:'GET',headers:{'Content-Type':'application/json'},credentials:'include'})
-    const sneakpeaks =  await fetch('https://nss-server-zeta.vercel.app/sneakpeaks')
+    const sneakpeaks = await fetch('https://nssproject.onrender.com/sneakpeaks',{method:'GET',headers:{'Content-Type':'application/json'},credentials:'include'})
     const allupevents =await data.json();
     const allexp = await exp.json();
     const allsneakpeaks = await sneakpeaks.json()
